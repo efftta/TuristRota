@@ -1,0 +1,131 @@
+/* Genel gövde stili */
+body {
+  font-family: Poppins, sans-serif;
+  padding: 20px;
+  margin: 0;
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+}
+
+/* Başlık */
+.header h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Kategori başlığı */
+#categoryTitle {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #f5a623;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Konum butonu */
+#locate-btn {
+  padding: 10px 20px;
+  background-color: #f5a623;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+}
+
+#locate-btn:hover {
+  background-color: #e69520;
+}
+
+/* Kategori butonları */
+.buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #f5a623;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #e69520;
+}
+
+/* İçerik kartları */
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.place-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgba(50, 50, 50, 0.8);
+  width: 180px; /* 6 kart bir satıra sığacak şekilde ayarlandı */
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.place-card h3 {
+  margin: 5px 0;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.place-card p {
+  margin: 5px 0;
+  font-size: 0.95em;
+  text-align: center;
+}
+
+.place-card img {
+  width: 100%;
+  height: 140px; /* Resim yüksekliği */
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.place-card a {
+  display: block;
+  color: #f5a623;
+  text-decoration: none;
+  margin: 5px 0;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.place-card button {
+  padding: 8px 15px;
+  background-color: #f5a623;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+.place-card button:hover {
+  background-color: #e69520;
+}

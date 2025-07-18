@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TuristRota</title>
+  <link rel="stylesheet" href="style.css?v=1.1"> <!-- Önbellek sorununu çözmek için versiyon eklendi -->
+  <link rel="icon" href="images/isticon.jpg" type="image/jpeg">
+  <style>
+    body {
+      margin: 0;
+      font-family: Poppins, sans-serif;
+      background: url('images/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Welcome to Istanbul</h1>
+  </div>
+  
+  <div class="buttons">
+    <button onclick="showCategory('mosques')">Mosques</button>
+    <button onclick="showCategory('historical')">Historical Sites</button>
+    <button onclick="showCategory('nature')">Nature</button>
+    <button onclick="showCategory('museums')">Museums</button>
+    <button onclick="showCategory('markets')">Markets</button>
+    <button onclick="showCategory('viewpoints')">Viewpoints</button>
+    <button id="locate-btn">Show Nearby Places</button>
+  </div>
+
+  <div id="categoryTitle"></div>
+  <div id="content"></div>
+
+  <script src="script.js?v=1.1"></script> <!-- Önbellek sorununu çözmek için versiyon eklendi -->
+</body>
+</html>
